@@ -53,5 +53,4 @@ public class Empregado extends Pessoa {
                 ", imposto=" + imposto +
                 '}';
     }
-
 }
