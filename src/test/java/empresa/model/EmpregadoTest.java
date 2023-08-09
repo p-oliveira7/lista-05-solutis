@@ -14,12 +14,6 @@ public class EmpregadoTest {
         double salarioEsperado = 3000.0 - (3000.0 * 15.0 / 100);
         double salarioCalculado = empregado.calcularSalario();
 
-        System.out.println("Informações do Empregado:");
-        System.out.println(empregado);
-
-        System.out.printf("Salário esperado: %.2f%n", salarioEsperado);
-        System.out.printf("Salário calculado: %.2f%n", salarioCalculado);
-
         assertEquals(salarioEsperado, salarioCalculado, 0.001);
     }
 }

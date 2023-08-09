@@ -33,11 +33,4 @@ public class Fornecedor extends Pessoa{
     public double obterSaldo() {
         return this.valorCredito - this.valorDivida;
     }
-    @Override
-    public String toString() {
-        return super.toString() + " Fornecedor{" +
-                "valorCredito=" + valorCredito +
-                ", valorDivida=" + valorDivida +
-                '}';
-    }
 }

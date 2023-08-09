@@ -36,11 +36,4 @@ public class Operario extends Empregado{
         double comissaoBase = (this.valorProducao * this.comissao / 100);
         return super.calcularSalario() + comissaoBase;
     }
-    @Override
-    public String toString() {
-        return super.toString() + " Operario{" +
-                "valorProducao=" + valorProducao +
-                ", comissao=" + comissao +
-                '}';
-    }
 }

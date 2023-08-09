@@ -14,12 +14,6 @@ public class AdministradorTest {
         double salarioEsperado = 4000.0 - (4000.0 * 12.0 / 100) + 300.0;
         double salarioCalculado = administrador.calcularSalario();
 
-        System.out.println("Informações do Administrador:");
-        System.out.println(administrador);
-
-        System.out.printf("Salário esperado: %.2f%n", salarioEsperado);
-        System.out.printf("Salário calculado: %.2f%n", salarioCalculado);
-
         assertEquals(salarioEsperado, salarioCalculado, 0.001);
     }
 }

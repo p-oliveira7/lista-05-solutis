@@ -37,11 +37,4 @@ public class Vendedor extends Empregado{
         double comissaoBase = this.valorVendas * this.comissao;
         return super.calcularSalario() + comissaoBase;
     }
-    @Override
-    public String toString() {
-        return super.toString() + " Vendedor{" +
-                "valorVendas=" + valorVendas +
-                ", comissao=" + comissao +
-                '}';
-    }
 }
